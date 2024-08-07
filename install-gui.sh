@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt update
 sudo apt install xvfb xfce4 xfce4-goodies mpv kdenlive simplescreenrecorder firefox-esr plank papirus-icon-theme dbus-x11 neofetch krita --assume-yes
+export $(dbus-launch)
+sudo apt install dbus-x11
 # Download Chrome Remote Desktop, install it, then delete downloaded .deb package
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg -i chrome-remote-desktop*
